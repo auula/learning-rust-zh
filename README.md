@@ -5,4 +5,4 @@
 
 |目录|地址|相关解析|
 |---|---|-------|
-|第一个rust程序|xxxx|wx|
+|第一个rust程序|https://github.com/higker/learning-rust-zh/tree/main/hello|https://t.1yb.co/ewqd|
