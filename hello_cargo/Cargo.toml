@@ -1,0 +1,14 @@
+[package]
+# 项目名字
+name = "hello_cargo"
+# 项目版本
+version = "0.1.0"
+# 开发者信息
+authors = ["Dings <deen.job@qq.com>"]
+# edition 字段表明代码应该使用哪个版本编译。如果该字段不存在，其默认为 2015 以提供后向兼容性
+edition = "2018"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+# 项目依赖的相关配置
+[dependencies]
