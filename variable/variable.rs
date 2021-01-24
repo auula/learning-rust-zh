@@ -35,4 +35,9 @@ fn main(){
     println!("old s pointer is {:p}",&s);
     let s = s;
     println!("new s pointer is {:p}",&s);
-}
+
+    // 补充常量
+    // 定义常量时必须指定数据类型，而定义变量时数据类型可以省略
+    const MY_AGE:u64 = 21;
+    println!("my age is {}",MY_AGE)
+} 
