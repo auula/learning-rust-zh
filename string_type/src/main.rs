@@ -21,5 +21,16 @@ fn main() {
     let mut phone = String::new();
     phone.push_str("Apple iPhone 11");
     let iphone = String::from(phone);
-    println!("{}", iphone)
+    println!("{}", iphone);
+
+    // 1 {{Hello}}
+    let mut hello_string = String::new();
+    hello_string.push_str("{");
+    hello_string.push_str("Hello");
+    hello_string.push_str("}");
+    println!("{}", hello_string);
+    // 2 {{Hello}}
+    println!("{left}Hello{right}", left = "{", right = "}");
+    // 3 {{Hello}}
+    println!("{{{}}}", "hello");
 }
