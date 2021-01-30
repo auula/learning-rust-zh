@@ -1,6 +1,8 @@
 # learning-rust-zh
 个人的 rust 学习资料
 
+> 项目仓库更新到: https://github.com/higker/learn-rust
+
 ## 学习目录
 
 |目录|源代码地址|相关解析|
