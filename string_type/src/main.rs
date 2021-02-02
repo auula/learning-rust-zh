@@ -33,4 +33,13 @@ fn main() {
     println!("{left}Hello{right}", left = "{", right = "}");
     // 3 {{Hello}}
     println!("{{{}}}", "hello");
+
+    let hello = String::from("Hello, world!");
+
+    println!("{}", hello);
+
+    let url = "https://getrust.tech";
+    let mut domain = url.to_string();
+    domain = domain.replace("https://", "");
+    println!("domain is {}", domain);
 }
