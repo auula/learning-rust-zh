@@ -37,4 +37,29 @@ fn main() {
     if !is_elder {
         println!("Not Elder");
     }
+
+    //  位运算符
+
+    let a: i32 = 2; // 二进制表示为 0 0 0 0 0 0 1 0
+    let b: i32 = 3; // 二进制表示为 0 0 0 0 0 0 1 1
+
+    let mut result: i32;
+
+    result = a & b;
+    println!("(a & b) => {} ", result);
+
+    result = a | b;
+    println!("(a | b) => {} ", result);
+
+    result = a ^ b;
+    println!("(a ^ b) => {} ", result);
+
+    result = !b;
+    println!("(!b) => {} ", result);
+
+    result = a << b;
+    println!("(a << b) => {}", result);
+
+    result = a >> b;
+    println!("(a >> b) => {}", result);
 }
