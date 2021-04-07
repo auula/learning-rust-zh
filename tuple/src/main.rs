@@ -8,5 +8,5 @@ fn main() {
     // 修改下标为2的值
     people.2 = "Jarvib Ding";
     let (v1, v2, v3) = people;
-    println!("{},{},{}", v1, v2, v3)
+    println!("{},{},{}", v1, v2, v3);
 }
