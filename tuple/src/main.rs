@@ -11,7 +11,6 @@ fn main() {
     println!("{},{},{}", v1, v2, v3);
 
     // 二维的元组
-
     let tuples_2d = (1024, ("Rust", '🦀'));
 
     println!("tuples_2d.1.1 = {}", tuples_2d.1 .1);
