@@ -2,16 +2,16 @@
 #[derive(Debug)]
 struct Rectangle<T> {
     width: T,
-    hight: T,
+    height: T,
 }
 
 // 实现泛型trait
 impl<T> Rectangle<T> {
-    pub fn widht(&self) -> &T {
+    pub fn width(&self) -> &T {
         &self.width
     }
-    pub fn hight(&self) -> &T {
-        &self.hight
+    pub fn height(&self) -> &T {
+        &self.height
     }
 }
 
@@ -23,14 +23,14 @@ trait Geometry {
 // 为i32类型的实现求面积特性
 impl Geometry for Rectangle<i32> {
     fn area(&self) -> i32 {
-        self.width * self.hight
+        self.width * self.height
     }
 }
 
 // 为rectangle实现i32方法
 impl Rectangle<f32> {
     pub fn area(&self) -> f32 {
-        self.width * self.hight
+        self.width * self.height
     }
 }
 
@@ -82,13 +82,13 @@ where
 fn main() {
     let rtl = Rectangle {
         width: 6,
-        hight: 12,
+        height: 12,
     };
 
     // method `area` not found for this
     println!("area = {}", rtl.area());
-    println!("widht = {}", rtl.widht());
-    println!("hight = {}", rtl.hight());
+    println!("width = {}", rtl.width());
+    println!("height = {}", rtl.height());
     println!("{:?}", rtl);
 
     let area_func = |g: &dyn Geometry| println!("area_func = {}", g.area());
